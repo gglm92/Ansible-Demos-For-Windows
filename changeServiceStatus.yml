@@ -1,0 +1,11 @@
+---
+- name:         Change status of a service
+  hosts:        all
+
+  tasks:
+  - name:       Change status of a service
+    win_service:
+      name:             "{{ name_of_service }}"
+      status:           "{{ status }}
+
+
