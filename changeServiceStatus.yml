@@ -6,4 +6,5 @@
   - name:       Change status of a service
     win_service:
       name:             "{{ name_of_service }}"
-      status:           "{{ status }}"
+      state:            "{{ status }}"
+
