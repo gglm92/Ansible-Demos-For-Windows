@@ -1,6 +1,6 @@
 ---
 - name:         Change status of a service
-  hosts:        all
+  hosts:        platform_windows
 
   tasks:
   - name:       Change status of a service
