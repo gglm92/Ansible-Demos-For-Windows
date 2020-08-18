@@ -1,0 +1,10 @@
+---
+- name:         Change status of a service
+  hosts:        platform_windows
+
+  tasks:
+  - name: Ensure user {{ user }} is present
+    win_user:
+      name: "{{ user }}
+      password: "{{ password }}"
+      state: present
